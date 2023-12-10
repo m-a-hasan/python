@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Edit Book</title>
+  </head>
+  <body>
+    <p>Book Name: {{ details.title }}</p>
+    <p>Current Rating: {{ details.rating }}</p>
+    {% from 'bootstrap5/form.html' import render_form %}
+    {{ render_form(form, novalidate=True) }}
+  </body>
+</html>
